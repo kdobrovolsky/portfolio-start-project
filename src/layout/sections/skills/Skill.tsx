@@ -86,7 +86,10 @@ const SkillItem = styled.figure`
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  
+  transition: 0.5s;
+&:hover{
+  transform: scale(1.2);
+}
   
 
 `;

@@ -3,12 +3,15 @@ import { AboutExperience } from "./AboutExperience";
 import { Container } from "../../../components/Container";
 import { AboutEducation } from "./AboutEducation";
 import { theme } from "../../../styles/Theme";
+import aboutDecor from '../../../assets/images/aboutDecor.svg'
+import { FlexWrapper } from "../../../components/FlexWrapper";
 
 
 export const About = () => {
   return (
     <StyledAbout>
        <Container>
+        <FlexWrapper>
         <Content>
        
       <StyledTitleAbout>About Me</StyledTitleAbout>
@@ -29,7 +32,12 @@ export const About = () => {
             <AboutEducation/>
             </Education>
             </Content>
-            </Container>
+
+            <AboutDecoration>
+              <AboutImageDecotarion src={aboutDecor} alt="" />
+            </AboutDecoration>
+            </FlexWrapper>
+            </Container>       
     </StyledAbout>
   );
 };
@@ -37,6 +45,8 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     background-color: ${theme.colors.primaryBg};
+    display:flex;
+    justify-content:space-between
 `
 
 const StyledSubtitle = styled.h3`
@@ -70,12 +80,23 @@ max-height:104px
 
 const Content = styled.div`
   max-width: 710px;
+ 
+
 `
 
 const Education = styled.div`
-  
+margin-top: 40px;
 `
 
 const Experience = styled.div`
+  
+`
+
+const AboutDecoration = styled.div`
+
+`
+const AboutImageDecotarion = styled.img`
+  max-width:530px;
+  max-height: 830px;
   
 `

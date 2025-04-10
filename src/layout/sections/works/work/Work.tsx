@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ImgChain from "../../../../assets/images/akar-icons_link-chain.svg";
 import ImgGithub from "../../../../assets/images/akar-icons_github-fill.svg";
 import { theme } from "../../../../styles/Theme";
+import { Button } from "../../../../components/Button";
 
 type WorkPropsType = {
   title: string;
@@ -15,7 +16,11 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
   return (
     <StyledWork>
+      <ImageWrapper>
       <Image src={props.src} alt="" />
+      <Button>Button</Button>
+     
+      </ImageWrapper>
       <WorkContent>
         <StyledTitle>{props.title}</StyledTitle>
         <WorkText>{props.text}</WorkText>
@@ -38,6 +43,7 @@ export const Work = (props: WorkPropsType) => {
           </WorkLink>
         </LinksWrapper>
       </WorkContent>
+     
     </StyledWork>
   );
 };
@@ -55,7 +61,44 @@ const Image = styled.img`
   max-height: 260px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+position:relative;
+
 `;
+
+const  ImageWrapper = styled.div`
+position:relative;
+
+
+&:hover{
+  ${Button}{
+    opacity:1;
+    z-index:1;
+  }
+  &::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    border-radius: 20px 20px 0px 0px;
+ 
+}
+
+}
+
+${Button}{
+  opacity:0;
+  position:absolute;
+  left:26%;
+  transform:translate(-50% -50%);
+  top:50%;
+}
+`
+
 
 const StyledTitle = styled.h3`
   font-weight: 500;
@@ -92,7 +135,7 @@ const TechItems = styled.div`
 const TechItem = styled.span`
   color: ${theme.colors.fontTitle};
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 162%;
 `;
 

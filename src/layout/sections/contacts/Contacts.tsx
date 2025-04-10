@@ -30,7 +30,6 @@ export const Contacts = () => {
               I'm available for a exciting new project. <StyleTalk>Let's Talk.</StyleTalk>
             </TitleDescription>
             
-  
             <ContactsText>
               You can send me a message here OR contact me on any social networks. 
               We can grab a coffee and talk it over a phone.
@@ -42,16 +41,12 @@ export const Contacts = () => {
 
             <InputGrid>
               <Field placeholder="Name"></Field>
-              <Field placeholder="Email adress"></Field>
-              <Field placeholder="Adress"></Field>
+              <Field placeholder="Email address"></Field>
+              <Field placeholder="Address"></Field>
               <Field placeholder="Phone"></Field>
             </InputGrid>
-            
-
             <Field placeholder="Your message" as={"textarea"}></Field>
-            
-
-            <ButtonContacts>Submit</ButtonContacts>
+            <ButtonContacts type="submit">Submit</ButtonContacts>
           </StyledForm>
         </GridWrapper>
       </Container>
@@ -69,7 +64,7 @@ const StyledContacts = styled.section`
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоподбор колонок (минимум 300px) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 60px; 
   align-items: start;
 
@@ -92,7 +87,7 @@ const StyledForm = styled.div`
   display: grid;
   gap: 10px;
   width: 100%; 
-  max-width: 470px; 
+  max-width: 670px; 
   justify-self: end; 
 
   
@@ -101,25 +96,23 @@ const StyledForm = styled.div`
     height: 155px; 
     width: 100%; 
   }
-
-
-  
-  
 `
 
 
 const Field = styled.input`
   min-height: 50px; 
-  background: rgba(241, 241, 241, 0.11); 
-  border-radius: 10px;
+  background:  #252527; 
+  color: white;
   width: 100%; 
   
 
   &::placeholder {
-    font-size: 15px; 
+    font-size: 20px; 
+    line-height: 101%;
+    font-weight: 500;
     padding: 19px 0px 16px 18px;
     color: #838383;
-    font-family: "DM Sans, sans-serif";
+ 
   }
 `
 
@@ -129,12 +122,12 @@ const ButtonContacts = styled.button`
   min-height: 50px;
   background: ${theme.colors.accent}; 
   font-weight: 700; 
-  font-size: 1rem; 
+  font-size: 16px; 
   letter-spacing: 0.1em; 
   text-transform: uppercase; 
   color: ${theme.colors.fontTitle};
-  border-radius: 10px; 
-  font-family: "DM Sans, sans-serif"; 
+ 
+
 `
 
 
