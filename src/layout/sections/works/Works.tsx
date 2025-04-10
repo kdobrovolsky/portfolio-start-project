@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import styled from "styled-components";
 import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/Rectangle1.jpg";
@@ -11,82 +12,78 @@ import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { SectionText } from "../../../components/SectionText";
 
+export const projectsData = [
+  {
+    id: "1",
+    src: socialImg,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+  {
+    id: "2",
+    src: socialImgTwo,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+  {
+    id: "3",
+    src: socialImgFree,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+  {
+    id: "4",
+    src: socialImgFour,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+  {
+    id: "5",
+    src: socialImgFive,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+  {
+    id: "6",
+    src: socialImgSix,
+    title: "Project Tile goes here",
+    text: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+    techStack: ["HTML", "JS", "SASS", "React"],
+  },
+];
 
 export const Works = () => {
   return (
     <StyledWorks>
-    <Container>
-      <SectionTitle>Projects</SectionTitle>
-      <SectionText $marginBottom="113px">Things I’ve built so far</SectionText>
-      <WorksGrid>
-        
-        <Work
-          src={socialImg}
-        
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        
-        />
-        
-
-
-<Work
-          src={socialImgTwo}
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        />
-
-<Work
-          src={socialImgFree}
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        />
-
-<Work
-          src={socialImgFour}
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        />
-
-<Work
-          src={socialImgFive}
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        />
-
-<Work
-          src={socialImgSix}
-          title={"Project Tile goes here"}
-          text={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-        />
-
-
-
-      </WorksGrid>
+      <Container>
+        <SectionTitle>Projects</SectionTitle>
+        <SectionText $marginBottom="113px">
+          Things I’ve built so far
+        </SectionText>
+        <WorksGrid>
+          {projectsData.map((project) => (
+            <Work
+              key={project.id}
+              src={project.src}
+              title={project.title}
+              text={project.text}
+              techStack={project.techStack}
+            />
+          ))}
+        </WorksGrid>
       </Container>
     </StyledWorks>
   );
 };
 
 const StyledWorks = styled.section`
-
   background-color: ${theme.colors.primaryBg};
-  
 `;
-
-
 
 // export const StyledText = styled.span`
 //   display:block;
@@ -98,9 +95,7 @@ const StyledWorks = styled.section`
 
 const WorksGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   padding: 0 20px;
-
-  
 `;

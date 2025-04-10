@@ -4,39 +4,45 @@ import imgLocations from '../../../assets/images/point.svg'
 import imgBuild from '../../../assets/images/mdi_office-building.svg'
 import { theme } from "../../../styles/Theme";
 
+
+const experienceData = [
+  {
+    position: "Junior Web Developer",
+    company: "Dr. Rajkumar's Learning App",
+    location: "Bengaluru",
+    duration: "Sep 2021 - Dec 2021"
+  },
+  {
+    position: "Web Development Intern",
+    company: "IonPixelz Web Solutions",
+    location: "Bengaluru",
+    duration: "Sep 2021 - Dec 2021"
+  },
+  {
+    position: "SEO / SEM Specialist",
+    company: "HAAPS",
+    location: "Bengaluru",
+    duration: "Sep 2021 - Dec 2021"
+  }
+];
+
 export const AboutExperience = () => {
   return (
     <StyledAboutExperience>
-
-         <Position>Junior Web Developer</Position>
+      {experienceData.map((exp, index) => (
+        <div key={index}>
+          <Position>{exp.position}</Position>
           
-          <ContentWrapper>   
-          <Company> <AboutImage src={imgBuild} alt="" /> Dr. Rajkumar's Learning App</Company>
-          <Location> <AboutImage src={imgLocations} alt="" /> Bengaluru</Location>
-          <Duration> <AboutImage src={imgData} alt="" /> Sep 2021 - Dec 2021</Duration>
-          </ContentWrapper> 
-          <Divider />
-
-          <Position>Web Development Intern</Position>
+          <ContentWrapper>
+            <Company><AboutImage src={imgBuild} alt="" /> {exp.company}</Company>
+            <Location><AboutImage src={imgLocations} alt="" /> {exp.location}</Location>
+            <Duration><AboutImage src={imgData} alt="" /> {exp.duration}</Duration>
+          </ContentWrapper>
           
-          <ContentWrapper>   
-          <Company> <AboutImage src={imgBuild} alt="" /> IonPixelz Web Solutions</Company>
-          <Location> <AboutImage src={imgLocations} alt="" /> Bengaluru</Location>
-          <Duration> <AboutImage src={imgData} alt="" /> Sep 2021 - Dec 2021</Duration>
-          </ContentWrapper>  
-          <Divider />
-
-          <Position>SEO / SEM Specialist</Position>
-          
-          <ContentWrapper>   
-          <Company> <AboutImage src={imgBuild} alt="" /> HAAPS</Company>
-          <Location> <AboutImage src={imgLocations} alt="" /> Bengaluru</Location>
-          <Duration> <AboutImage src={imgData} alt="" /> Sep 2021 - Dec 2021</Duration>
-          </ContentWrapper> 
-          <Divider />
+          {index !== experienceData.length - 1 && <Divider />}
+        </div>
+      ))}
     </StyledAboutExperience>
-
-    
   );
 };
 
