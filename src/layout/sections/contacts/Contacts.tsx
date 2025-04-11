@@ -46,7 +46,7 @@ export const Contacts = () => {
               <Field placeholder="Phone"></Field>
             </InputGrid>
             <Field placeholder="Your message" as={"textarea"}></Field>
-            <ButtonContacts type="submit">Submit</ButtonContacts>
+            <ButtonContacts type="submit">contact</ButtonContacts>
           </StyledForm>
         </GridWrapper>
       </Container>
@@ -59,6 +59,7 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
   background-color: ${theme.colors.primaryBg};
+
 `
 
 
@@ -67,7 +68,7 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 60px; 
   align-items: start;
-
+ 
 
  
 `
@@ -77,7 +78,7 @@ const InputGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 7px;
-
+ 
   
   
 `
@@ -95,6 +96,7 @@ const StyledForm = styled.div`
     resize: none;
     height: 155px; 
     width: 100%; 
+     font-family: 'Poppins,  sans-serif'
   }
 `
 
@@ -104,15 +106,20 @@ const Field = styled.input`
   background:  #252527; 
   color: white;
   width: 100%; 
-  
+  font-family: 'Poppins,  sans-serif';
 
   &::placeholder {
     font-size: 20px; 
     line-height: 101%;
     font-weight: 500;
     padding: 19px 0px 16px 18px;
-    color: #838383;
- 
+    background: ${theme.colors.accent}; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; 
+     
+    
   }
 `
 
@@ -126,8 +133,19 @@ const ButtonContacts = styled.button`
   letter-spacing: 0.1em; 
   text-transform: uppercase; 
   color: ${theme.colors.fontTitle};
- 
-
+  font-family: 'Poppins,  sans-serif';
+  cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 7px 14px rgba(231, 15, 170, 0.3);
+    }
+    
+    &:active {
+        transform: translateY(-1px);
+    }
 `
 
 
@@ -145,6 +163,7 @@ const TitleDescription = styled.h2`
   max-width: 534px;
   color: ${theme.colors.fontTitle};
   margin-bottom: 31px;
+  
 `
 
 
@@ -154,6 +173,7 @@ const ContactsText = styled.p`
   line-height: 150%;
   color: ${theme.colors.fontText}; 
   max-width: 421px;
+   
 `
 
 

@@ -22,9 +22,13 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 67px;
   }
- 
- padding: 8px 0px 25px 0px
-`;
+ padding: 8px 0px 25px 0px;
+
+ @media ${theme.media.tablet}{
+  display:none;
+ }
+
+ `
 
 const ListItem = styled.li`
 font-family: var(--second-family);
@@ -46,3 +50,4 @@ color: ${theme.colors.fontText};
 const MenuItem = styled.ul`
   
 `
+

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import imgGitGub from '../../assets/images/gitHub.svg'
 import twitter from '../../assets/images/telegramicons_telegram.svg'
 import linkedin from '../../assets/images/linkedin.svg'
+import { theme } from '../../styles/Theme';
 
 export const Messages = () => {
   return (
@@ -29,6 +30,9 @@ export const Messages = () => {
 };
 
 const StyledMessages = styled.div`
+   @media ${theme.media.tablet}{
+    display:none;
+  };
   ul{
     display:flex;
     align-content:center;

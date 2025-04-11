@@ -9,7 +9,7 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container>
-      <FlexWrapper $align="center" $justify="space-between">
+      <FlexWrapper $align="center" $justify="space-between" $wrap="wrap">
         <MainContent>
           <SmallText>Hi there!👋</SmallText>
           <NameTitle>I'm Kirill</NameTitle>

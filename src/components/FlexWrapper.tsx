@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 type FlexWrapperPropsType = {
     $direction?: string
     $justify?: string
@@ -15,4 +16,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     flex-wrap: ${props => props.$wrap || "nowrap"};
     height:100%;
     line-height: 1.2;
+
+   
 `

@@ -18,7 +18,7 @@ export const Work = (props: WorkPropsType) => {
     <StyledWork>
       <ImageWrapper>
       <Image src={props.src} alt="" />
-      <Button>Button</Button>
+      <Button>Live Preview</Button>
      
       </ImageWrapper>
       <WorkContent>
@@ -73,12 +73,13 @@ position:relative;
   ${Button}{
     opacity:1;
     z-index:1;
-  }
+    transition: 0.6s;
+    }
   &::before{
   content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;  
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -149,16 +150,25 @@ const WorkContent = styled.div`
 `;
 
 const WorkLink = styled.a`
-  color: ${theme.colors.fontTextAdditional};
-  font-weight: 400;
+  
+  font-weight: 300;
   font-size: 16px;
   line-height: 162%;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
-`;
+  background: ${theme.colors.accent}; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; 
+  transition: 0.5s;
+&:hover{
+  transform: scale(1.1);
+}
+`
 
 const LinkImage = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 4px;
+ 
 `;
