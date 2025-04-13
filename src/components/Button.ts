@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     width: 170px;
-    height: 32px;
+    height: 42px;
     position: relative;
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
-    border-radius: 20px; 
+    border-radius: 35px; 
     color: white; 
     cursor: pointer;
     transition: all 0.3s ease;

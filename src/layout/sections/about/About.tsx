@@ -34,7 +34,7 @@ export const About = () => {
             </Content>
 
             <AboutDecoration>
-              <AboutImageDecotarion src={aboutDecor} alt="" />
+              <AboutImageDecoration src={aboutDecor} alt="" />
             </AboutDecoration>
             </FlexWrapper>
             </Container>       
@@ -93,9 +93,9 @@ const Experience = styled.div`
 `
 
 const AboutDecoration = styled.div`
-
+  overflow:hidden;
 `
-const AboutImageDecotarion = styled.img`
+const AboutImageDecoration = styled.img`
   max-width:530px;
   max-height: 830px;
   

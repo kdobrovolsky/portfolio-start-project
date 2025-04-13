@@ -9,8 +9,8 @@ export const theme = {
         fontTextAdditional: "#d9d9d9",
     },
 
-    media:{
-    tablet: "screen and (max-width: 768px)",
-    mobile: "screen and (max-width: 576px)"
-    }
+    media: {
+        tablet: "screen and (min-width: 577px) and (max-width: 1280px)",
+        mobile: "screen and (min-width: 360px) and (max-width: 576px)"
+      }
 }

@@ -33,6 +33,10 @@ const StyledMessages = styled.div`
    @media ${theme.media.tablet}{
     display:none;
   };
+
+   @media ${theme.media.mobile}{
+    display:none;
+   };
   ul{
     display:flex;
     align-content:center;

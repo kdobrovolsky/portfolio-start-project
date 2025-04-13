@@ -75,6 +75,10 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
     display: block;
   }
 
+  @media ${theme.media.mobile} {
+    display: block;
+  }
+
   span {
     display: block;
     width: 36px;

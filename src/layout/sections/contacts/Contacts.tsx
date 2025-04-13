@@ -179,4 +179,8 @@ const ContactsText = styled.p`
 
 const StyleTalk = styled.p`
   text-decoration: underline;
+  background: ${theme.colors.accent}; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 `

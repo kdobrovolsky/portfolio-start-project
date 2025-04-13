@@ -83,6 +83,8 @@ export const Works = () => {
 
 const StyledWorks = styled.section`
   background-color: ${theme.colors.primaryBg};
+
+  
 `;
 
 // export const StyledText = styled.span`
@@ -98,4 +100,11 @@ const WorksGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   padding: 0 20px;
+  @media ${theme.media.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+ }
+
+ @media ${theme.media.tablet} {
+    grid-template-columns: repeat(1, 1fr);
+ }
 `;

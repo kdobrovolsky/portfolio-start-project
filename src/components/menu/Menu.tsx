@@ -26,6 +26,11 @@ const StyledMenu = styled.nav`
 
  @media ${theme.media.tablet}{
   display:none;
+  
+ }
+
+ @media ${theme.media.mobile}{
+  display:none;
  }
 
  `

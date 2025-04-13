@@ -54,6 +54,7 @@ const StyledWork = styled.div`
   padding: 5px;
   min-width: 373px;
   min-height: 567px;
+ 
 `;
 
 const Image = styled.img`
@@ -83,7 +84,7 @@ position:relative;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
+    backdrop-filter: opacity(4px);
     z-index: 1;
     border-radius: 20px 20px 0px 0px;
  
