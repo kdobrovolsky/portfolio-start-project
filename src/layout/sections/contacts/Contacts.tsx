@@ -4,6 +4,7 @@ import { SectionTitle } from "../../../components/SectionTitle"
 
 import { theme } from "../../../styles/Theme"
 import { SectionText } from "../../../components/SectionText"
+import { font } from "../../../styles/Common"
 
 
 
@@ -68,9 +69,7 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 60px; 
   align-items: start;
- 
 
- 
 `
 
 
@@ -78,9 +77,6 @@ const InputGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 7px;
- 
-  
-  
 `
 
 
@@ -109,9 +105,10 @@ const Field = styled.input`
   font-family: 'Poppins,  sans-serif';
 
   &::placeholder {
-    font-size: 20px; 
+    ${font({weight:500, Fmax:20 , Fmin:12  })}
+    /* font-size: 20px;  */
     line-height: 101%;
-    font-weight: 500;
+    /* font-weight: 500; */
     padding: 19px 0px 16px 18px;
     background: ${theme.colors.accent}; 
   -webkit-background-clip: text;
@@ -125,11 +122,12 @@ const Field = styled.input`
 
 
 const ButtonContacts = styled.button`
+  ${font({weight:700, Fmax:16 , Fmin:8  })}
   width: 100%; 
   min-height: 50px;
   background: ${theme.colors.accent}; 
-  font-weight: 700; 
-  font-size: 16px; 
+  /* font-weight: 700; 
+  font-size: 16px;  */
   letter-spacing: 0.1em; 
   text-transform: uppercase; 
   color: ${theme.colors.fontTitle};
@@ -157,8 +155,9 @@ const ContactsContent = styled.div`
 
 
 const TitleDescription = styled.h2`
-  font-weight: 900;
-  font-size: 48px;
+  ${font({weight:900, Fmax:48 , Fmin:32  })}
+  /* font-weight: 900;
+  font-size: 48px; */
   text-decoration-skip-ink: none;
   max-width: 534px;
   color: ${theme.colors.fontTitle};
@@ -168,6 +167,7 @@ const TitleDescription = styled.h2`
 
 
 const ContactsText = styled.p`
+  ${font({ Fmax:18 , Fmin:9  })}
   display: block;
   font-size: 18px;
   line-height: 150%;
@@ -178,6 +178,7 @@ const ContactsText = styled.p`
 
 
 const StyleTalk = styled.p`
+  ${font({weight:900, Fmax:48 , Fmin:32  })}
   text-decoration: underline;
   background: ${theme.colors.accent}; 
   -webkit-background-clip: text;

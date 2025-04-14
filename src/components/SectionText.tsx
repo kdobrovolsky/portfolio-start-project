@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../styles/Theme";
+import { font } from "../styles/Common";
 
 type SectionText = {
    $margin?: string
@@ -10,9 +11,9 @@ type SectionText = {
 }
 
 export const SectionText = styled.p<SectionText>`
-
-font-weight: 400;
-font-size: 32px;
+${font({weight: 400, Fmax:32 , Fmin:16})}
+/* font-weight: 400;
+font-size: 32px; */
 line-height: 81%;
 text-align: center;
 color: ${theme.colors.fontText};
@@ -21,5 +22,13 @@ margin-top: ${props => props.$marginTop || "0"};
 margin-bottom: ${props => props.$marginBottom || "0"};
 margin-right: ${props => props.$marginRight || "0"};
 margin-left: ${props => props.$marginLeft|| "0"};
+@media ${theme.media.mobile}{
+    margin-bottom: 80px
+   
+  }
 
+  @media ${theme.media.tablet}{
+    margin-bottom: 100px
+   
+  }
 `

@@ -17,7 +17,7 @@ section{
     padding:200px 0px;
 
     @media ${theme.media.mobile}{
-    padding: 100px 0px
+    padding: 50px 0px
     }
 }
 

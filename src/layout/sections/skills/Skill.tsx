@@ -79,12 +79,20 @@ const StyledSkill = styled.div`
   gap: 50px;
   padding: 0 20px;
   justify-items: center;
+  @media ${theme.media.tablet}{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media ${theme.media.mobile}{
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const SkillItem = styled.figure`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 15px;
   transition: 0.5s;
 &:hover{

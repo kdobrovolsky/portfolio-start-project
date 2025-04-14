@@ -3,6 +3,7 @@ import ImgChain from "../../../../assets/images/akar-icons_link-chain.svg";
 import ImgGithub from "../../../../assets/images/akar-icons_github-fill.svg";
 import { theme } from "../../../../styles/Theme";
 import { Button } from "../../../../components/Button";
+import { font } from "../../../../styles/Common";
 
 type WorkPropsType = {
   title: string;
@@ -52,9 +53,10 @@ const StyledWork = styled.div`
   background-color: #363636;
   border-radius: 20px;
   padding: 5px;
-  min-width: 373px;
-  min-height: 567px;
- 
+    max-width: 373px;
+    max-height: 567px;
+    width:100%;
+  
 `;
 
 const Image = styled.img`
@@ -103,17 +105,19 @@ ${Button}{
 
 
 const StyledTitle = styled.h3`
-  font-weight: 500;
-  font-size: 28px;
+${font({weight: 500, Fmax:28 , Fmin:18  })}
+  /* font-weight: 500;
+  font-size: 28px; */
   line-height: 93%;
   padding: 28px 0px 17px 0px;
   color: ${theme.colors.fontTitle};
 `;
 
 const WorkText = styled.p`
+  ${font({weight: 300, Fmax:18 , Fmin:10  })}
   color: ${theme.colors.fontTitle};
-  font-weight: 300px;
-  font-size: 18px;
+  /* font-weight: 300px;
+  font-size: 18px; */
   margin-bottom: 20px;
 `;
 
@@ -125,8 +129,8 @@ const TechStack = styled.div`
 `;
 
 const TechLabel = styled.span`
+${font({weight: 400, Fmax:16 , Fmin:8  })}
   color: ${theme.colors.fontTitle};
-  font-weight: 500;
 `;
 
 const TechItems = styled.div`
@@ -135,10 +139,11 @@ const TechItems = styled.div`
 `;
 
 const TechItem = styled.span`
-  color: ${theme.colors.fontTitle};
-  font-weight: 300;
-  font-size: 14px;
+${font({weight: 300, Fmax:14 , Fmin:7  })}
+  /* font-weight: 300;
+  font-size: 14px; */
   line-height: 162%;
+  color: ${theme.colors.fontTitle};
 `;
 
 const LinksWrapper = styled.div`
@@ -151,9 +156,9 @@ const WorkContent = styled.div`
 `;
 
 const WorkLink = styled.a`
-  
-  font-weight: 300;
-  font-size: 16px;
+  ${font({weight: 300, Fmax:16 , Fmin:8  })}
+  /* font-weight: 300;
+  font-size: 16px; */
   line-height: 162%;
   text-decoration-skip-ink: none;
   background: ${theme.colors.accent}; 
@@ -171,5 +176,13 @@ const LinkImage = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 4px;
- 
+  @media ${theme.media.mobile}{
+    max-width:10px;
+    max-height: 10px
+  }
+
+  @media ${theme.media.tablet}{
+    max-width:14px;
+    max-height: 14px
+  }
 `;

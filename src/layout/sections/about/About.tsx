@@ -5,6 +5,7 @@ import { AboutEducation } from "./AboutEducation";
 import { theme } from "../../../styles/Theme";
 import aboutDecor from '../../../assets/images/aboutDecor.svg'
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { font } from "../../../styles/Common";
 
 
 export const About = () => {
@@ -50,8 +51,9 @@ const StyledAbout = styled.section`
 `
 
 const StyledSubtitle = styled.h3`
- font-weight: 700;
-font-size: 42px;
+${font({weight:700, Fmax:42 , Fmin:22  })}
+ /* font-weight: 700;
+font-size: 42px; */
 line-height: 124%;
 letter-spacing: -0.01em;
 color: ${theme.colors.fontTitle};
@@ -60,8 +62,9 @@ margin-bottom:40px
 
 
 const StyledTitleAbout = styled.h2`
-  font-weight: 700;
-font-size: 42px;
+${font({weight:700, Fmax:42 , Fmin:28  })}
+  /* font-weight: 700;
+font-size: 42px; */
 line-height: 124%;
 letter-spacing: -0.01em;
 color: ${theme.colors.fontTitle};
@@ -69,8 +72,8 @@ margin-bottom:40px
 `
 
 const StyledTitleDescription = styled.p`
-display:block;  
-font-size: 18px;
+${font({Fmax:18 , Fmin:8  })}
+/* font-size: 18px; */
 line-height: 144%;
 color: ${theme.colors.fontText};
 margin-bottom:38px;

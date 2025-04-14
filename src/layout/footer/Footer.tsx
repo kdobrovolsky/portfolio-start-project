@@ -4,6 +4,7 @@ import { FooterContacts } from "./FooterContacts";
 
 import { Container } from "../../components/Container";
 import { theme } from "../../styles/Theme";
+import { font } from "../../styles/Common";
 
 
 
@@ -60,10 +61,28 @@ const FooterContent = styled.div`
    opacity: 0.4;
   }
 
+  @media ${theme.media.mobile}{
+    &::before{
+  content: '';
+  width:100%;
+   margin-left: -1px;
+   height: 2px;
+   background-color: ${theme.colors.fontText};
+   margin-top: 25px;
+   margin-bottom: 25px;
+   opacity: 0.4;
+    }
+  }
+
 `
 
 const FooterCopyRight = styled.div`
   color: ${theme.colors.fontText};
+    ${font({weight:400, Fmax:18 , Fmin:9  })}
+    /* font-weight: 400;
+    font-size: 18px; */
+    line-height: 144%;
+    text-align: center;
 
 `
 

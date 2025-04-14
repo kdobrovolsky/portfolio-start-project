@@ -36,7 +36,9 @@ const MainContent = styled.div`
 const StyledMain = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.primaryBg};
-  
+  @media ${theme.media.mobile}{
+    padding-top: 135px;
+    }
 `;
 
 const MainTitle = styled.h1`
@@ -101,8 +103,8 @@ const PhotoWrapper = styled.div`
 
 
     @media ${theme.media.mobile}{
-    width:360px;
-    height: 456px;
+    width:302px;
+    height: 422px;
   }
     
   }
@@ -116,8 +118,8 @@ const Photo = styled.img`
 
 
   @media ${theme.media.mobile}{
-    width:392px;
-    height: 446px;
+    width:340px;
+    height: 420px;
   }
 `;
 

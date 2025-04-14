@@ -98,13 +98,23 @@ const StyledWorks = styled.section`
 const WorksGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px;
   padding: 0 20px;
+  
+ 
   @media ${theme.media.mobile} {
-    grid-template-columns: repeat(1, 1fr);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-items:center;
+    margin: 0 auto;
+    gap:20px;
  }
 
  @media ${theme.media.tablet} {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:center;
+    gap:30px
+    
  }
 `;
