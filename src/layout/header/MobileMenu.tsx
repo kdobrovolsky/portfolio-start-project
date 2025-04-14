@@ -34,7 +34,7 @@ const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   left: 0;
   bottom: 0;
   z-index: 9998;
-  background-color: rgba(34, 28, 28, 0.95);
+  background-color: rgba(34, 28, 28, 0.342);
   backdrop-filter: blur(5px);
   display: none;
   transition: opacity 0.3s ease;
@@ -129,7 +129,7 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
 
 const ListItem = styled.li`
   font-family: var(--second-family);
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   color: ${theme.colors.fontText};
   transition: transform 0.3s ease;

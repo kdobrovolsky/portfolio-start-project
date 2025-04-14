@@ -19,7 +19,7 @@ export const Work = (props: WorkPropsType) => {
     <StyledWork>
       <ImageWrapper>
       <Image src={props.src} alt="" />
-      <Button>Live Preview</Button>
+      <Button>View project</Button>
      
       </ImageWrapper>
       <WorkContent>
@@ -53,10 +53,13 @@ const StyledWork = styled.div`
   background-color: #363636;
   border-radius: 20px;
   padding: 5px;
-    max-width: 373px;
+    
     max-height: 567px;
     width:100%;
   
+   @media ${theme.media.desktop}{
+    max-width: 373px;
+  }
 `;
 
 const Image = styled.img`
@@ -101,6 +104,8 @@ ${Button}{
   transform:translate(-50% -50%);
   top:50%;
 }
+
+
 `
 
 
