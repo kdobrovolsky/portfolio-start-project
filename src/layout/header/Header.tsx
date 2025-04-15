@@ -1,21 +1,21 @@
 
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { Messages } from "../../components/messages/Messages";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { MobileMenu } from "./MobileMenu";
+import { MobileMenu } from "./HeaderMenu/MobileMenu";
 import { S } from "./Header_Styles";
+import { DesktopMenu } from "./HeaderMenu/DesktopMenu";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"];
 
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <S.Header>
       <Container>
         <FlexWrapper $justify="space-between" $wrap="wrap" >
           <Logo />
-          <Menu menuItems={items} />
+          <DesktopMenu menuItems={items} />
           <MobileMenu menuItems={items} />
           <Messages />
         </FlexWrapper>

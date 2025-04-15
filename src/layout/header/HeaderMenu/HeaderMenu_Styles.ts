@@ -1,31 +1,49 @@
-import styled, { css } from "styled-components";
-import { theme } from "../../styles/Theme";
-import { useState } from "react";
+import styled, { css } from "styled-components"
+import { theme } from "../../../styles/Theme"
+// DesktopMenu
+const StyledMenu = styled.nav`
+  ul {
+    display: flex;
+    gap: 67px;
+  }
+ padding: 8px 0px 25px 0px;
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
-  const [isOpen, setIsOpen] = useState(false);
+ @media ${theme.media.tablet}{
+  display:none;
+  
+ }
 
-  return (
-    <>
-      <BurgerButton $isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
-        <span></span>
-      </BurgerButton>
+ @media ${theme.media.mobile}{
+  display:none;
+ }
 
-      <MobileMenuWrapper $isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <ul>
-          {props.menuItems.map((item, index) => {
-            return (
-              <ListItem key={index}>
-                <Link href="">{item}</Link>
-              </ListItem>
-            );
-          })}
-        </ul>
-      </MobileMenuWrapper>
-    </>
-  );
-};
+ `
 
+const DesktopListItem = styled.li`
+font-family: var(--second-family);
+font-size: 20px;
+text-align: center;
+color: ${theme.colors.fontText};
+transition: 0.5s;
+&:hover{
+  transform: scale(1.2);
+}
+
+`
+
+
+const DesktopLink = styled.a`
+color: ${theme.colors.fontText};
+`
+
+const MenuItem = styled.ul`
+  
+`
+
+// MobileMenu
+const StyledMobileMenu = styled.div`
+  
+`
 
 const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   position: fixed;
@@ -127,7 +145,7 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
   }
 `;
 
-const ListItem = styled.li`
+const MobileListItem = styled.li`
   font-family: var(--second-family);
   font-size: 30px;
   text-align: center;
@@ -143,21 +161,21 @@ const ListItem = styled.li`
   }
 `;
 
-const Link = styled.a`
+const MobileLink = styled.a`
   color: ${theme.colors.fontText};
   text-decoration: none;
 `;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+export const S = {
+    DesktopLink,
+    DesktopListItem,
+    StyledMenu,
+    MenuItem,
+    BurgerButton,
+    MobileMenuWrapper,
+    StyledMobileMenu,
+    MobileListItem,
+    MobileLink,
+}

@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import styled from "styled-components";
 import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/Rectangle1.jpg";
 import socialImgTwo from "../../../assets/images/Rectangle2.jpg";
@@ -9,8 +8,8 @@ import socialImgFive from "../../../assets/images/Rectangle5.jpg";
 import socialImgSix from "../../../assets/images/Rectangle6.jpg";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
-import { theme } from "../../../styles/Theme";
 import { SectionText } from "../../../components/SectionText";
+import { S } from "./Works_Styles";
 
 export const projectsData = [
   {
@@ -59,13 +58,13 @@ export const projectsData = [
 
 export const Works = () => {
   return (
-    <StyledWorks>
+    <S.Works>
       <Container>
         <SectionTitle>Projects</SectionTitle>
         <SectionText $marginBottom="113px">
           Things I’ve built so far
         </SectionText>
-        <WorksGrid>
+        <S.WorksGrid>
           {projectsData.map((project) => (
             <Work
               key={project.id}
@@ -75,46 +74,9 @@ export const Works = () => {
               techStack={project.techStack}
             />
           ))}
-        </WorksGrid>
+        </S.WorksGrid>
       </Container>
-    </StyledWorks>
+    </S.Works>
   );
 };
 
-const StyledWorks = styled.section`
-  background-color: ${theme.colors.primaryBg};
-
-  
-`;
-
-// export const StyledText = styled.span`
-//   display:block;
-// font-size: 32px;
-// line-height: 81%;
-// text-align: center;
-// color: ${theme.colors.fontText};
-// `
-
-const WorksGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 0 20px;
-  
- 
-  @media ${theme.media.mobile} {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-items:center;
-    margin: 0 auto;
-    gap:20px;
- }
-
- @media ${theme.media.tablet} {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content:center;
-    gap:30px
-    
- }
-`;

@@ -14,10 +14,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 section{
-    padding:200px 0px;
+    padding:150px 0px;
 
     @media ${theme.media.mobile}{
     padding: 50px 0px
+    }
+
+    @media ${theme.media.tablet}{
+    padding: 80px 0px
     }
 }
 

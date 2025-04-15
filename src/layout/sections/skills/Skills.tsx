@@ -26,11 +26,3 @@ const StyledSkills = styled.section`
  
 `;
 
-
-// const StyledSkillsText = styled.span`
-//   font-weight: 400;
-// font-size: 32px;
-// line-height: 81%;
-// text-align: center;
-// color:${theme.colors.fontText}
-// `

@@ -1,16 +1,15 @@
-import styled from "styled-components";
 import imgData from "../../../assets/images/data.svg";
-
 import imgBuild from "../../../assets/images/mdi_office-building.svg";
 import {
   Position,
   PositionContent,
   PositionLabel,
-} from "../about/AboutExperience";
-import { Company } from "../about/AboutExperience";
-import { Duration } from "../about/AboutExperience";
-import { Divider } from "../about/AboutExperience";
-import { AboutImage } from "../about/AboutExperience";
+} from "../about/About_Styles";
+import { Company } from "../about/About_Styles";
+import { Duration } from "../about/About_Styles";
+import { Divider } from "../about/About_Styles";
+import { AboutImage } from "../about/About_Styles";
+import { S } from "./About_Styles";
 
 const educationData = [
   {
@@ -23,7 +22,7 @@ const educationData = [
 
 export const AboutEducation = () => {
   return (
-    <StyledAboutEducation>
+    <S.AboutEducation>
       {educationData.map((exp, index) => (
         <div key={index}>
           <PositionContent>
@@ -31,7 +30,7 @@ export const AboutEducation = () => {
             <PositionLabel>{exp.positionLabel}</PositionLabel>
           </PositionContent>
 
-          <LocationWrapper>
+          <S.LocationWrapper>
             <Company>
               {" "}
               <AboutImage src={imgBuild} alt="" />
@@ -42,19 +41,11 @@ export const AboutEducation = () => {
               {" "}
               <AboutImage src={imgData} alt="" /> {exp.duration}
             </Duration>
-          </LocationWrapper>
+          </S.LocationWrapper>
 
           {index !== educationData.length - 0 && <Divider />}
         </div>
       ))}
-    </StyledAboutEducation>
+    </S.AboutEducation>
   );
 };
-
-const StyledAboutEducation = styled.div``;
-
-const LocationWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0px;
-`;
