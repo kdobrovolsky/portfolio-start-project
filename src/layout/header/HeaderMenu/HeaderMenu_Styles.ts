@@ -52,7 +52,7 @@ const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   left: 0;
   bottom: 0;
   z-index: 9998;
-  background-color: rgba(34, 28, 28, 0.342);
+  background-color: rgba(34, 28, 28, 0.81);
   backdrop-filter: blur(5px);
   display: none;
   transition: opacity 0.3s ease;

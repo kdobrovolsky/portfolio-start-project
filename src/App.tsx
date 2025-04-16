@@ -1,4 +1,3 @@
-
 import { Footer } from './layout/footer/Footer'
 import { Header } from './layout/header/Header'
 import { About } from './layout/sections/about/About'
@@ -16,7 +15,6 @@ function App() {
         <About/>
         <Skills/>
         <Works/>
-      
         <Contacts/>
         <Slogan/>
         <Footer/>

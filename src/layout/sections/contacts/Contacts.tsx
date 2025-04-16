@@ -7,6 +7,7 @@ import { S } from "./Contacts_Styles"
 
 
 
+
 export const Contacts = () => {
     return(
         <S.Contacts>
@@ -20,7 +21,7 @@ export const Contacts = () => {
         <SectionText $marginBottom="120px">Feel free to contact me here</SectionText>
         
    
-        <S.GridWrapper>
+        <S.FlexWrapper >
           
     
           <S.ContactsContent>
@@ -43,11 +44,12 @@ export const Contacts = () => {
               <S.Field placeholder="Email address"></S.Field>
               <S.Field placeholder="Address"></S.Field>
               <S.Field placeholder="Phone"></S.Field>
+              <S.Field placeholder="Your message" as={"textarea"}></S.Field>
+              <S.ButtonContacts type="submit">contact</S.ButtonContacts>
             </S.InputGrid>
-            <S.Field placeholder="Your message" as={"textarea"}></S.Field>
-            <S.ButtonContacts type="submit">contact</S.ButtonContacts>
+            
           </S.Form>
-        </S.GridWrapper>
+        </S.FlexWrapper>
       </Container>
     </S.Contacts>
   )

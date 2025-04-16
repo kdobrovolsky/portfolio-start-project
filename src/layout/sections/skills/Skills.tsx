@@ -1,14 +1,12 @@
-import styled from "styled-components";
-
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./Skill";
 import { Container } from "../../../components/Container";
-import { theme } from "../../../styles/Theme";
 import { SectionText } from "../../../components/SectionText";
+import { S } from "./Skills_Styles";
 
 export const Skills = () => {
   return (
-    <StyledSkills>
+    <S.Skills>
       <Container>
         
       <SectionTitle>My Tech Stack</SectionTitle>
@@ -17,12 +15,8 @@ export const Skills = () => {
         <Skill />
       
       </Container>
-    </StyledSkills>
+    </S.Skills>
   );
 };
 
-const StyledSkills = styled.section`
-  background-color: ${theme.colors.primaryBg};
- 
-`;
 

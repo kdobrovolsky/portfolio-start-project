@@ -1,8 +1,7 @@
 import { AboutExperience } from "./AboutExperience";
 import { Container } from "../../../components/Container";
 import { AboutEducation } from "./AboutEducation";
-import aboutDecor from '../../../assets/images/aboutDecor.svg'
-import { FlexWrapper } from "../../../components/FlexWrapper";
+
 import { S } from "./About_Styles";
 
 
@@ -10,7 +9,7 @@ export const About = () => {
   return (
     <S.About>
        <Container>
-        <FlexWrapper>
+     
         <S.Content>
        
       <S.AboutTitle>About Me</S.AboutTitle>
@@ -32,10 +31,7 @@ export const About = () => {
             </S.Education>
             </S.Content>
 
-            <S.AboutDecoration>
-              <S.AboutImageDecoration src={aboutDecor} alt="" />
-            </S.AboutDecoration>
-            </FlexWrapper>
+          
             </Container>       
     </S.About>
   );

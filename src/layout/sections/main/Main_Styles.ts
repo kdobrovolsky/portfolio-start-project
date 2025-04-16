@@ -40,7 +40,7 @@ const Name = styled.span`
   -webkit-text-fill-color: transparent;
 `;
 const MainText = styled.p`
-  ${font({ weight: 500, Fmax: 30, Fmin: 14 })}
+  ${font({ weight: 500, Fmax: 30, Fmin: 18 })}
   display: block;
   color: #bcbcbc;
   max-width: 693px;

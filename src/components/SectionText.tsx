@@ -11,10 +11,7 @@ type SectionText = {
 }
 
 export const SectionText = styled.p<SectionText>`
-${font({weight: 400, Fmax:32 , Fmin:16})}
-/* font-weight: 400;
-font-size: 32px; */
-line-height: 81%;
+${font({weight: 400, Fmax:32 , Fmin:22})}
 text-align: center;
 color: ${theme.colors.fontText};
 margin: ${props => props.$margin || "0"};

@@ -3,7 +3,7 @@ import { theme } from "../../styles/Theme";
 
 
 const Header = styled.header`
-  background-color: #221c1c45;
+  background-color:rgba(34, 28, 28, 0.86);
   padding: 20px 0;
   position:fixed;
   width:100%;

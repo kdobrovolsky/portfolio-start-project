@@ -35,7 +35,7 @@ const WorksGrid = styled.div`
 
 const Work = styled.div`
   background-color: #363636;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 5px;
 
   max-height: 567px;
@@ -87,16 +87,17 @@ const ImageWrapper = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  ${font({ weight: 500, Fmax: 28, Fmin: 18 })}
+  ${font({ weight: 500, Fmax: 28, Fmin: 22 })}
   line-height: 93%;
   padding: 28px 0px 17px 0px;
   color: ${theme.colors.fontTitle};
 `;
 
 const WorkText = styled.p`
-  ${font({ weight: 300, Fmax: 18, Fmin: 10 })}
+  ${font({ weight: 300, Fmax: 18, Fmin: 12, lineHeight: 1.4})}
   color: ${theme.colors.fontTitle};
   margin-bottom: 20px;
+  
 `;
 
 const TechStack = styled.div`
@@ -106,7 +107,7 @@ const TechStack = styled.div`
 `;
 
 const TechLabel = styled.span`
-  ${font({ weight: 400, Fmax: 16, Fmin: 8 })}
+  ${font({ weight: 400, Fmax: 16, Fmin: 12 })}
   color: ${theme.colors.fontTitle};
 `;
 
@@ -116,7 +117,7 @@ const TechItems = styled.div`
 `;
 
 const TechItem = styled.span`
-  ${font({ weight: 300, Fmax: 14, Fmin: 7 })}
+  ${font({ weight: 300, Fmax: 14, Fmin: 10 })}
   line-height: 162%;
   color: ${theme.colors.fontTitle};
 `;
@@ -131,7 +132,7 @@ const Content = styled.div`
 `;
 
 const WorkLink = styled.a`
-  ${font({ weight: 300, Fmax: 16, Fmin: 8 })}
+  ${font({ weight: 300, Fmax: 16, Fmin: 14 })}
   line-height: 162%;
   text-decoration-skip-ink: none;
   background: ${theme.colors.accent};
@@ -150,8 +151,8 @@ const LinkImage = styled.img`
   height: 18px;
   margin-right: 4px;
   @media ${theme.media.mobile} {
-    max-width: 10px;
-    max-height: 10px;
+    max-width: 12px;
+    max-height: 12px;
   }
 
   @media ${theme.media.tablet} {

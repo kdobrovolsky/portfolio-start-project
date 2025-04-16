@@ -7,10 +7,11 @@ const About = styled.section`
   background-color: ${theme.colors.primaryBg};
   display: flex;
   justify-content: space-between;
+  overflow:clip;
 `;
 
 const Subtitle = styled.h3`
-  ${font({ weight: 700, Fmax: 42, Fmin: 22 })}
+  ${font({ weight: 700, Fmax: 42, Fmin: 32 })}
   line-height: 124%;
   letter-spacing: -0.01em;
   color: ${theme.colors.fontTitle};
@@ -18,7 +19,7 @@ const Subtitle = styled.h3`
 `;
 
 const AboutTitle = styled.h2`
-  ${font({ weight: 700, Fmax: 42, Fmin: 28 })}
+  ${font({ weight: 700, Fmax: 42, Fmin: 32 })}
   line-height: 124%;
   letter-spacing: -0.01em;
   color: ${theme.colors.fontTitle};
@@ -26,16 +27,16 @@ const AboutTitle = styled.h2`
 `;
 
 const DescriptionText = styled.p`
-  ${font({ Fmax: 18, Fmin: 8 })}
+  ${font({ Fmax: 18, Fmin: 14 })}
   line-height: 144%;
   color: ${theme.colors.fontText};
   margin-bottom: 38px;
-  max-width: 708px;
+  max-width: 908px;
   max-height: 104px;
 `;
 
 const Content = styled.div`
-  max-width: 710px;
+  width:100%;
 `;
 
 const Education = styled.div`
@@ -44,13 +45,7 @@ const Education = styled.div`
 
 const Experience = styled.div``;
 
-const AboutDecoration = styled.div`
-  overflow: hidden;
-`;
-const AboutImageDecoration = styled.img`
-  max-width: 530px;
-  max-height: 830px;
-`;
+
 
 /* AboutEducation */
 
@@ -67,14 +62,14 @@ const LocationWrapper = styled.div`
 const AboutExperience = styled.div``;
 
 export const Position = styled.h4`
-  ${font({ Fmax: 20, Fmin: 8 })}
+  ${font({ Fmax: 20, Fmin: 12 })}
   line-height: 140%;
   letter-spacing: 0.05em;
   color: ${theme.colors.fontTitle};
 `;
 
 export const Company = styled.span`
-  ${font({ weight: 500, Fmax: 12, Fmin: 4 })}
+  ${font({ weight: 500, Fmax: 12, Fmin: 8})}
   line-height: 233%;
   letter-spacing: 0.08em;
   color: ${theme.colors.fontText};
@@ -82,14 +77,14 @@ export const Company = styled.span`
 `;
 
 export const Location = styled.span`
-  ${font({ weight: 500, Fmax: 12, Fmin: 4 })}
+  ${font({ weight: 500, Fmax: 12, Fmin: 8 })}
   line-height: 233%;
   letter-spacing: 0.08em;
   color: ${theme.colors.fontText};
 `;
 
 export const Duration = styled.span`
-  ${font({ weight: 500, Fmax: 12, Fmin: 4 })}
+  ${font({ weight: 500, Fmax: 12, Fmin: 8 })}
   line-height: 233%;
   letter-spacing: 0.08em;
   color: ${theme.colors.fontText};
@@ -111,11 +106,11 @@ export const ContentWrapper = styled.div`
 
 export const AboutImage = styled.img`
   @media ${theme.media.mobile} {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     @media ${theme.media.tablet} {
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
     }
   }
 `;
@@ -126,7 +121,7 @@ export const PositionContent = styled.div`
 `;
 
 export const PositionLabel = styled.label`
-  ${font({ weight: 600, Fmax: 9, Fmin: 4 })}
+  ${font({ weight: 600, Fmax: 9, Fmin: 6 })}
   width: 84px;
   height: 24px;
   line-height: 289%;
@@ -135,15 +130,15 @@ export const PositionLabel = styled.label`
   background-color: #d7ffe0;
   border-radius: 100px;
   @media ${theme.media.mobile} {
-    width: 33px;
-    height: 14px;
+    width: 46px;
+    height: 18px;
   }
 
-  @media ${theme.media.tablet} {
-    width: 58px;
-    height: 20px;
-  }
+ 
 `;
+
+
+
 
 export const S = {
 // About
@@ -154,8 +149,7 @@ export const S = {
   Content,
   Education,
   Experience,
-  AboutDecoration,
-  AboutImageDecoration,
+
 /* AboutEducation */
   AboutEducation,
   LocationWrapper,
@@ -170,4 +164,7 @@ export const S = {
   AboutImage,
   PositionContent,
   PositionLabel,
+
+
 };
+
