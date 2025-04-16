@@ -58,7 +58,7 @@ export const projectsData = [
 
 export const Works = () => {
   return (
-    <S.Works>
+    <S.Works id = {"projects"}>
       <Container>
         <SectionTitle>Projects</SectionTitle>
         <SectionText $marginBottom="113px">

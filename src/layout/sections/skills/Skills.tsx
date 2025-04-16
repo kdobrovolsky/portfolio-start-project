@@ -6,7 +6,7 @@ import { S } from "./Skills_Styles";
 
 export const Skills = () => {
   return (
-    <S.Skills>
+    <S.Skills id = {"tech stack"}>
       <Container>
         <SectionTitle>My Tech Stack</SectionTitle>
         <SectionText $marginBottom="140px">

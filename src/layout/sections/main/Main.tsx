@@ -6,13 +6,12 @@ import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
 export const Main = () => {
   return (
-    <S.Main>
+    <S.Main id = {"home"}>
       <Container>
         <FlexWrapper $align="center" $justify="space-around" $wrap="wrap">
           <S.MainContent>
             <S.SmallText>Hi there!👋</S.SmallText>
-            <S.Name>I'm Kirill</S.Name>
-            {/* <S.MainTitle>I Web Developer</S.MainTitle> */}
+            <S.Name>I'm Kirill Dobrovolsky</S.Name>
             <S.MainTitle>
               <p>I Web Developer</p>
             <Typewriter

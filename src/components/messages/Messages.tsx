@@ -9,18 +9,18 @@ export const Messages = () => {
     <StyledMessages>
       <ul>
         <li>
-          <a href="">
-            <img src={imgGitGub} alt="" />
+          <a href="https://github.com/kdobrovolsky">
+            <img src={imgGitGub} alt="github" />
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/k_dobrovolsky">
+            <img src={twitter} alt="telegram" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src={twitter} alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src={linkedin} alt="" />
+            <img src={linkedin} alt="linkedin" />
           </a>
         </li>
       </ul>

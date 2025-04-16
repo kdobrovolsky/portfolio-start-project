@@ -5,7 +5,7 @@ import { S } from "./Contacts_Styles";
 
 export const Contacts = () => {
   return (
-    <S.Contacts>
+    <S.Contacts id = {"contact"}>
       <Container>
         <SectionTitle>Contact</SectionTitle>
 

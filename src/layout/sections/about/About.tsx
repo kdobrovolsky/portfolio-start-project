@@ -6,7 +6,7 @@ import { S } from "./About_Styles";
 
 export const About = () => {
   return (
-    <S.About>
+    <S.About id = {"about"}>
       <Container>
         <S.Content>
           <S.AboutTitle>About Me</S.AboutTitle>

@@ -35,7 +35,7 @@ const DesktopLink = styled.a`
 const MenuItem = styled.ul``;
 
 // MobileMenu
-const StyledMobileMenu = styled.div``;
+const MobileMenu = styled.div``;
 
 const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   position: fixed;
@@ -173,7 +173,7 @@ export const S = {
   MenuItem,
   BurgerButton,
   MobileMenuWrapper,
-  StyledMobileMenu,
+  MobileMenu,
   MobileListItem,
   MobileLink,
 };

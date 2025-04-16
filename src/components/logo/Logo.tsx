@@ -9,6 +9,17 @@ export const Logo = () => {
   );
 };
 
-const StyledLogo = styled.img``;
+const StyledLogo = styled.img`
+ animation: rotate 1s linear ;
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+`;
 
 const LinkLogo = styled.a``;
