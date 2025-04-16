@@ -15,6 +15,3 @@ export const DesktopMenu = (props: { menuItems: Array<string> }) => {
     </S.StyledMenu>
   );
 };
-
-
-

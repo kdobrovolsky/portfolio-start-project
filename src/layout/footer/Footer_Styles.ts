@@ -75,9 +75,9 @@ const Content = styled.div`
   gap: 34px;
   padding-top: 10px;
   @media ${theme.media.mobile} {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 `;
 

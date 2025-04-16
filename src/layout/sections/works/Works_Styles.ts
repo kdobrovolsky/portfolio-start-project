@@ -94,10 +94,9 @@ const CardTitle = styled.h3`
 `;
 
 const WorkText = styled.p`
-  ${font({ weight: 300, Fmax: 18, Fmin: 12, lineHeight: 1.4})}
+  ${font({ weight: 300, Fmax: 18, Fmin: 12, lineHeight: 1.4 })}
   color: ${theme.colors.fontTitle};
   margin-bottom: 20px;
-  
 `;
 
 const TechStack = styled.div`

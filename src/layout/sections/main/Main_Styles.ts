@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
 
-
-
 const Main = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.primaryBg};
@@ -20,6 +18,10 @@ const MainTitle = styled.h1`
   ${font({ weight: 700, Fmax: 48, Fmin: 32 })}
   letter-spacing: -0.02em;
   color: ${theme.colors.fontTextAdditional};
+
+  p{
+    display:none;
+  }
 `;
 
 const SmallText = styled.span`

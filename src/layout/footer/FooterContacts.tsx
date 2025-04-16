@@ -10,7 +10,9 @@ export const FooterContacts = () => {
       </S.Logo>
 
       <S.Content>
-        <S.ContactLink href="tel:+375447392673">+375 (44) 739-26-73</S.ContactLink>
+        <S.ContactLink href="tel:+375447392673">
+          +375 (44) 739-26-73
+        </S.ContactLink>
         <S.ContactLink href="mailto:kdobrovolsky02@gmail.ru">
           {" "}
           kdobrovolsky02@gmail.com
@@ -20,5 +22,3 @@ export const FooterContacts = () => {
     </S.FooterContacts>
   );
 };
-
-

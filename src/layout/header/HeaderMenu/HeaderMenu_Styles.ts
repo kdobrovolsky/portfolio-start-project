@@ -1,49 +1,41 @@
-import styled, { css } from "styled-components"
-import { theme } from "../../../styles/Theme"
+import styled, { css } from "styled-components";
+import { theme } from "../../../styles/Theme";
 // DesktopMenu
 const StyledMenu = styled.nav`
   ul {
     display: flex;
     gap: 67px;
   }
- padding: 8px 0px 25px 0px;
+  padding: 8px 0px 25px 0px;
 
- @media ${theme.media.tablet}{
-  display:none;
-  
- }
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 
- @media ${theme.media.mobile}{
-  display:none;
- }
-
- `
+  @media ${theme.media.mobile} {
+    display: none;
+  }
+`;
 
 const DesktopListItem = styled.li`
-font-family: var(--second-family);
-font-size: 20px;
-text-align: center;
-color: ${theme.colors.fontText};
-transition: 0.5s;
-&:hover{
-  transform: scale(1.2);
-}
-
-`
-
+  font-family: var(--second-family);
+  font-size: 20px;
+  text-align: center;
+  color: ${theme.colors.fontText};
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
 
 const DesktopLink = styled.a`
-color: ${theme.colors.fontText};
-`
+  color: ${theme.colors.fontText};
+`;
 
-const MenuItem = styled.ul`
-  
-`
+const MenuItem = styled.ul``;
 
 // MobileMenu
-const StyledMobileMenu = styled.div`
-  
-`
+const StyledMobileMenu = styled.div``;
 
 const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   position: fixed;
@@ -58,12 +50,14 @@ const MobileMenuWrapper = styled.div<{ $isOpen: boolean }>`
   transition: opacity 0.3s ease;
   opacity: 0;
 
-  ${props => props.$isOpen && css`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-  `}
+  ${(props) =>
+    props.$isOpen &&
+    css`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+    `}
 
   ul {
     display: flex;
@@ -107,9 +101,11 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
     top: 24px;
     transition: all 0.3s ease;
 
-    ${props => props.$isOpen && css`
-      background-color: transparent;
-    `}
+    ${(props) =>
+      props.$isOpen &&
+      css`
+        background-color: transparent;
+      `}
 
     &::before {
       content: "";
@@ -121,10 +117,12 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
       transform: translateY(-10px);
       transition: all 0.3s ease;
 
-      ${props => props.$isOpen && css`
-        transform: rotate(45deg) translateY(0);
-        top: 0;
-      `}
+      ${(props) =>
+        props.$isOpen &&
+        css`
+          transform: rotate(45deg) translateY(0);
+          top: 0;
+        `}
     }
 
     &::after {
@@ -137,10 +135,12 @@ const BurgerButton = styled.button<{ $isOpen: boolean }>`
       transform: translateY(10px);
       transition: all 0.3s ease;
 
-      ${props => props.$isOpen && css`
-        transform: rotate(-45deg) translateY(0);
-        top: 0;
-      `}
+      ${(props) =>
+        props.$isOpen &&
+        css`
+          transform: rotate(-45deg) translateY(0);
+          top: 0;
+        `}
     }
   }
 `;
@@ -166,16 +166,14 @@ const MobileLink = styled.a`
   text-decoration: none;
 `;
 
-
-
 export const S = {
-    DesktopLink,
-    DesktopListItem,
-    StyledMenu,
-    MenuItem,
-    BurgerButton,
-    MobileMenuWrapper,
-    StyledMobileMenu,
-    MobileListItem,
-    MobileLink,
-}
+  DesktopLink,
+  DesktopListItem,
+  StyledMenu,
+  MenuItem,
+  BurgerButton,
+  MobileMenuWrapper,
+  StyledMobileMenu,
+  MobileListItem,
+  MobileLink,
+};

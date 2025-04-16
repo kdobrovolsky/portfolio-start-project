@@ -7,7 +7,7 @@ const About = styled.section`
   background-color: ${theme.colors.primaryBg};
   display: flex;
   justify-content: space-between;
-  overflow:clip;
+  overflow: clip;
 `;
 
 const Subtitle = styled.h3`
@@ -36,7 +36,7 @@ const DescriptionText = styled.p`
 `;
 
 const Content = styled.div`
-  width:100%;
+  width: 100%;
 `;
 
 const Education = styled.div`
@@ -44,8 +44,6 @@ const Education = styled.div`
 `;
 
 const Experience = styled.div``;
-
-
 
 /* AboutEducation */
 
@@ -69,7 +67,7 @@ export const Position = styled.h4`
 `;
 
 export const Company = styled.span`
-  ${font({ weight: 500, Fmax: 12, Fmin: 8})}
+  ${font({ weight: 500, Fmax: 12, Fmin: 8 })}
   line-height: 233%;
   letter-spacing: 0.08em;
   color: ${theme.colors.fontText};
@@ -133,15 +131,10 @@ export const PositionLabel = styled.label`
     width: 46px;
     height: 18px;
   }
-
- 
 `;
 
-
-
-
 export const S = {
-// About
+  // About
   About,
   Subtitle,
   AboutTitle,
@@ -150,10 +143,10 @@ export const S = {
   Education,
   Experience,
 
-/* AboutEducation */
+  /* AboutEducation */
   AboutEducation,
   LocationWrapper,
-/* AboutExperience */
+  /* AboutExperience */
   AboutExperience,
   Position,
   Company,
@@ -164,7 +157,4 @@ export const S = {
   AboutImage,
   PositionContent,
   PositionLabel,
-
-
 };
-

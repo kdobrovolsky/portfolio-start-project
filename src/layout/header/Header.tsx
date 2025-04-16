@@ -1,4 +1,3 @@
-
 import { Logo } from "../../components/logo/Logo";
 import { Messages } from "../../components/messages/Messages";
 import { Container } from "../../components/Container";
@@ -13,7 +12,7 @@ export const Header = () => {
   return (
     <S.Header>
       <Container>
-        <FlexWrapper $justify="space-between" $wrap="wrap" >
+        <FlexWrapper $justify="space-between" $wrap="wrap">
           <Logo />
           <DesktopMenu menuItems={items} />
           <MobileMenu menuItems={items} />
@@ -23,4 +22,3 @@ export const Header = () => {
     </S.Header>
   );
 };
-

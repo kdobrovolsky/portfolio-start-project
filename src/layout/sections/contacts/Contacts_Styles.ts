@@ -7,12 +7,12 @@ const Contacts = styled.section`
 `;
 
 const FlexWrapper = styled.div`
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   gap: 60px;
   @media ${theme.media.mobile} {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 `;
 
@@ -27,9 +27,6 @@ const InputGrid = styled.div`
   button {
     grid-column: span 2;
   }
-
-
-  
 `;
 
 const Form = styled.form`
@@ -51,7 +48,7 @@ const Field = styled.input`
   background: #252527;
   color: white;
   width: 100%;
-  font-family: "Poppins",  sans-serif;
+  font-family: "Poppins", sans-serif;
 
   &::placeholder {
     ${font({ weight: 500, Fmax: 20, Fmin: 14 })}
@@ -73,7 +70,7 @@ const ButtonContacts = styled.button`
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: ${theme.colors.fontTitle};
-  font-family: "Poppins",  sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -88,9 +85,7 @@ const ButtonContacts = styled.button`
   }
 `;
 
-const ContactsContent = styled.div`
- 
-`;
+const ContactsContent = styled.div``;
 
 const TitleDescription = styled.h2`
   ${font({ weight: 900, Fmax: 48, Fmin: 32 })}
@@ -99,7 +94,7 @@ const TitleDescription = styled.h2`
   color: ${theme.colors.fontTitle};
   margin-bottom: 31px;
   @media ${theme.media.mobile} {
-    max-width:none;
+    max-width: none;
   }
 `;
 
@@ -111,7 +106,7 @@ const ContactsText = styled.p`
   color: ${theme.colors.fontText};
   max-width: 421px;
   @media ${theme.media.mobile} {
-    max-width:none;
+    max-width: none;
   }
 `;
 
