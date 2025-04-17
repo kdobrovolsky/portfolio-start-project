@@ -99,7 +99,7 @@ const TitleDescription = styled.h2`
 `;
 
 const ContactsText = styled.p`
-  ${font({ Fmax: 18, Fmin: 12 })}
+  ${font({ Fmax: 20, Fmin: 12 })}
   display: block;
   font-size: 18px;
   line-height: 150%;

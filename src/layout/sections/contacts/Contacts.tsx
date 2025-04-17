@@ -35,7 +35,7 @@ export const Contacts = () => {
               <S.Field placeholder="Address"></S.Field>
               <S.Field placeholder="Phone"></S.Field>
               <S.Field placeholder="Your message" as={"textarea"}></S.Field>
-              <S.ButtonContacts type="submit">contact</S.ButtonContacts>
+              <S.ButtonContacts type="submit" >contact</S.ButtonContacts>
             </S.InputGrid>
           </S.Form>
         </S.FlexWrapper>

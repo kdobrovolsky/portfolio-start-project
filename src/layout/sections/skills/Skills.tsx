@@ -14,7 +14,6 @@ export const Skills = () => {
         <SectionText $marginBottom="140px">
           Technologies I’ve been working with recently
         </SectionText>
-
         <Skill />
       </AnimatedSection>
       </Container>

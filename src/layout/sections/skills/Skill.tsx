@@ -65,9 +65,9 @@ const skillData = [
   },
   {
     iconId: "sass",
-    width: "113",
+    width: "120",
     height: "120",
-    viewBox: "0 0 113 87",
+    viewBox: "0 0 113 120",
     skillName: "SASS",
   },
   {

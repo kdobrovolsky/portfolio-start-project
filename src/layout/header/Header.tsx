@@ -8,6 +8,8 @@ import { DesktopMenu } from "./HeaderMenu/DesktopMenu";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"];
 
+
+
 export const Header = () => {
   return (
     <S.Header>
