@@ -1,12 +1,12 @@
 import { Messages } from "../../components/messages/Messages";
-import logotip from "../../assets/images/reactLogo-svg.svg";
 import { S } from "./Footer_Styles";
+import { Logo } from "../../components/logo/Logo";
 
 export const FooterContacts = () => {
   return (
     <S.FooterContacts>
       <S.Logo>
-        <S.FooterLogo src={logotip} alt="" />
+        <Logo/>
       </S.Logo>
 
       <S.Content>

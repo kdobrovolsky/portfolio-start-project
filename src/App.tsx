@@ -8,11 +8,10 @@ import { Works } from "./layout/sections/works/Works";
 import { Contacts } from "./layout/sections/contacts/Contacts";
 import { Particlel } from "./components/particles/Particle";
 
-
 function App() {
   return (
     <div className="App">
-      <Particlel/>
+      <Particlel />
       <Header />
       <Main />
       <About />

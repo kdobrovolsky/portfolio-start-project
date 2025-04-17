@@ -26,7 +26,6 @@ const SkillItem = styled.figure`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 15px;
   transition: 0.5s;
   &:hover {

@@ -49,6 +49,4 @@ button {
     background-color:unset;
     border: none;
 }
-
-
 `;

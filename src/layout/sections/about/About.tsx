@@ -1,14 +1,15 @@
 import { AboutExperience } from "./AboutExperience";
 import { Container } from "../../../components/Container";
 import { AboutEducation } from "./AboutEducation";
-
 import { S } from "./About_Styles";
+import AnimatedSection from "../../../components/animated/AnimatedSection";
 
 export const About = () => {
   return (
     <S.About id = {"about"}>
       <Container>
         <S.Content>
+        <AnimatedSection from="left" delay={0.2}>
           <S.AboutTitle>About Me</S.AboutTitle>
           <S.DescriptionText>
             The Generator App is an online tool that helps you to export
@@ -26,6 +27,7 @@ export const About = () => {
             <S.Subtitle>Education</S.Subtitle>
             <AboutEducation />
           </S.Education>
+          </AnimatedSection>
         </S.Content>
       </Container>
     </S.About>

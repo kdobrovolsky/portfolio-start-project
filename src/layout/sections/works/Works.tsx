@@ -10,6 +10,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { SectionText } from "../../../components/SectionText";
 import { S } from "./Works_Styles";
+import AnimatedSection from "../../../components/animated/AnimatedSection";
 
 export const projectsData = [
   {
@@ -60,6 +61,7 @@ export const Works = () => {
   return (
     <S.Works id = {"projects"}>
       <Container>
+      <AnimatedSection from="right" delay={0.2}>
         <SectionTitle>Projects</SectionTitle>
         <SectionText $marginBottom="113px">
           Things I’ve built so far
@@ -75,6 +77,7 @@ export const Works = () => {
             />
           ))}
         </S.WorksGrid>
+        </AnimatedSection>
       </Container>
     </S.Works>
   );

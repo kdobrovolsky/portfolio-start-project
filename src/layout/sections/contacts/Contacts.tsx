@@ -2,11 +2,13 @@ import { Container } from "../../../components/Container";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { SectionText } from "../../../components/SectionText";
 import { S } from "./Contacts_Styles";
+import AnimatedSection from "../../../components/animated/AnimatedSection";
 
 export const Contacts = () => {
   return (
     <S.Contacts id = {"contact"}>
       <Container>
+      <AnimatedSection from="bottom" delay={0.2}>
         <SectionTitle>Contact</SectionTitle>
 
         <SectionText $marginBottom="120px">
@@ -37,6 +39,7 @@ export const Contacts = () => {
             </S.InputGrid>
           </S.Form>
         </S.FlexWrapper>
+        </AnimatedSection>
       </Container>
     </S.Contacts>
   );
