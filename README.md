@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# 🚀 Portfolio Starter Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в исходный код моего персонального веб-сайта портфолио! Здесь собраны мои проекты, навыки и опыт в веб-разработке. Сайт создан с использованием современных технологий и лучших практик разработки.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Особенности
 
-## Expanding the ESLint configuration
+- **⚡ Мгновенная загрузка** - сборка на Vite для максимальной производительности
+- **🎨 Styled Components** - CSS-in-JS для компонентного стилирования
+- **📱 Полностью адаптивный** - идеально отображается на всех устройствах
+- **⚛️ Современный React** - функциональные компоненты и хуки
+- **🎯 Компонентная архитектура** - переиспользуемые и поддерживаемые компоненты
+- **🌙 Готов к темной теме** - легко добавить переключение темы
+- **🔧 Легко кастомизировать** - простые конфигурационные файлы
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 Технологический стек
 
-- Configure the top-level `parserOptions` property like this:
+- **React 18** - пользовательские интерфейсы
+- **Vite** - сборка и разработка
+- **Styled Components** - стилизация компонентов
+- **HTML5 & CSS3** - семантическая верстка
+- **JavaScript (ES6+)** - современный JavaScript
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Быстрый старт
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Предварительные требования
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Убедитесь, что на вашем компьютере установлены:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Node.js** (версия 16 или выше)
+- **npm** или **pnpm**
+
+### 1. Клонирование репозитория
+
+```bash
+git clone https://github.com/kdobrovolsky/portfolio-start-project.git
+cd portfolio-start-project
