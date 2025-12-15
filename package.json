@@ -1,13 +1,15 @@
 {
   "name": "portfolio-start-project-vite",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://вашusername.github.io/portfolio-start-project-vite",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tsparticles/engine": "^3.8.1",
@@ -36,14 +38,11 @@
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.3.0",
     "globals": "^15.12.0",
     "terser-webpack-plugin": "^5.3.14",
     "typescript": "~5.6.3",
     "typescript-eslint": "^8.15.0",
     "vite": "^6.0.1"
-  },
-  "files.defaultViewer": {
-    "*.svg": "default"
-  },
-  "svg.preview.mode": "none"
+  }
 }
